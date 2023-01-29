@@ -12,6 +12,13 @@ $(document.body).keypress(function(){
   nextSequence();}
 });
 
+$("h1").click(function(){
+  if(!start){
+  start=true;
+  $("h1").text("level"+level);
+  nextSequence();}
+});
+
 
 function delay(time) {
   return new Promise(resolve => setTimeout(resolve, time));
